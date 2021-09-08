@@ -7,8 +7,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh
 
 # Workspaces
-bspc monitor -d 空 所 北 南 東 西 襲 八 撃 火
-# Zeichen: Ku;Sho;Norden;Süden;Osten;Westen;Shu;Geki;Raiden;Fire
+bspc monitor -d 爵      
 
 
 # Gaps and Borders
@@ -34,7 +33,7 @@ bspc rule -a Toolkit state=floating
 # Autostart
 devmon &
 setxkbmap de &
-compton -f &
 nitrogen --restore &
 xsetroot -cursor_name left_ptr &
-wal -R &
+picom -fc &
+udiskie -At &

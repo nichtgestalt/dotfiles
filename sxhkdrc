@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	st
 
 # program launcher
 super + d
@@ -20,8 +20,16 @@ super + Escape
 # bspwm hotkeys
 #
 
+# volume controll
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +10%
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -10%
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+
 # Lock screen
-super + shift + l
+#super + shift + l
 	slock
 
 # Launch Filemanager
